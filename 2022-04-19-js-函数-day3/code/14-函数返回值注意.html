@@ -1,0 +1,29 @@
+<script>
+
+    function bar(){
+        let a = 12;
+        let b = 8;
+
+        let c = a + b;
+    }
+
+    //打印就是bar函数的返回值,因为bar中没有return, bar函数返回值用undefined站位
+    console.log( bar() ); 
+
+
+
+    
+
+    function foo(){
+        let a = 12;
+        let b = 8;
+
+        let c = a + b;
+        return c
+    }
+
+    //打印就是foo函数的返回值,因为foo有return, bar函数返回值: 就是return返回的数据
+    console.log( foo() ); 
+
+
+</script>

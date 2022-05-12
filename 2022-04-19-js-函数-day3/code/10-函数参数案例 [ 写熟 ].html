@@ -1,0 +1,21 @@
+<script>
+    /* 
+        需求: 封装一个求任意三个数之间的最大值
+    */
+
+    function printMax(a, b, c){
+
+        //求a与b的最大值, 赋值给max
+        let max = a > b ? a : b;
+
+        //再求max和c之间的最大值, 赋值给max
+        max = max > c ? max : c;
+
+        return max ;
+    }
+
+    let num = printMax(36, 28, 10)  + 78
+    console.log( num );
+
+    
+</script>

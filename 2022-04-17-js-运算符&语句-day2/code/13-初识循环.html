@@ -1,0 +1,37 @@
+<script>
+
+    /*
+        需求: 输出10次 '我喜欢你'
+    
+    */
+
+    //传统写法
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+    //console.log( '我喜欢他' )
+
+    //for循环优化
+    for(let i=0; i<10000; i++){
+        console.log( '我喜欢他' )
+    }
+
+    /*
+        i=0  1  2 3 4 5 6 7 8 9
+
+        执行流程: 
+            第1步: 初始化循环变量           ===> let i=0;
+            第2步: 判断循环条件是否为真      ===> i<10
+            第3步: 执行循环体               ===> {console.log( '我喜欢他' )}
+            第4步: 更新循环变量             ===> i++
+            第5步: 回到第2步
+    */
+
+
+</script>

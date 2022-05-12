@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //需求：制作一个5秒倒计时，到0就停止计时
+        let i=5;
+        let timer=setInterval(function(){
+            console.log(i);
+
+            //当i==0就清除同期定时器
+            if(i===0){
+                clearInterval(timer); //必须加定时器标识，定时器标识通过获取定时器返回值得到
+            }
+
+            i--;
+        }, 1000);
+    </script>
+</body>
+</html>

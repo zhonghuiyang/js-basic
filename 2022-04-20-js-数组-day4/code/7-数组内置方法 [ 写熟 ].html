@@ -1,0 +1,40 @@
+<script>
+
+    /* 
+        arr.concat() : 连接数组
+    */
+    arr1 = [1,2,3]
+    arr2 = [4,5,6]
+    arr3 = ['a', 'b', 'c']
+
+    arr = arr1.concat( arr2, arr3 ) //[1, 2, 3, 4, 5, 6, 'a', 'b', 'c']
+    console.log( arr );
+
+
+</script>
+
+
+<script>
+    /* 
+        arr.slice()  : 截取数组
+        闭区间: [2,6]   2 3 4 5 6
+        开区间: (2,6)   3 4 5 
+    */
+    arr = ['a','b','c','d','e','f','g','h']
+    subArr = arr.slice(2, 7) //[2,7)从索引2开始截取到索引7的位置
+    console.log( subArr );//['c', 'd', 'e', 'f', 'g']
+
+</script>
+
+
+<script>
+    /* 
+        arr.join()   : 数组分割为字符串
+    */
+    arr = ['a','b','c','d','e','f','g','h']
+    str = arr.join('&') //把arr中元素用&连接为字符串 //a&b&c&d&e&f&g&h
+    str = arr.join() //默认用逗号把arr中元素连接为字符串 //a,b,c,d,e,f,g,h
+    str = arr.join('') //用空字符串把arr中元素连接为字符串 //abcdefgh
+    console.log(str); //abcdefgh
+
+</script>

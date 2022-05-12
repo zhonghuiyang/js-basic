@@ -1,0 +1,29 @@
+<script>
+
+    //1.编写函数实现返回1-n之间所有整数和
+    function printSum (n){
+
+        let sum = 0;//总和
+        for(let i=1; i<=n; i++){
+            sum += i; //累加总和
+        }
+        return sum;
+
+    }
+    console.log( printSum(100) ); //打印函数调用后返回的结果
+
+</script>
+
+
+<script>    
+    //3.编写函数实现返回三个数的平均值 = 总和 / 总个数
+    function printAvg( a, b, c ){
+        let sum = a + b + c; //总和
+        let avg = sum / 3; //平均值
+        return avg;  //返回平均值
+    }
+
+    console.log( printAvg(1,2,3) );
+
+
+</script>

@@ -1,0 +1,80 @@
+<script>
+
+    /* 
+        请设计一个函数，通过形式参数获取到传入的实际参数后，
+        利用判断语句判断这个数字是奇数还是偶数，奇数输出“odd”，偶数输出“even”
+    */
+
+    function isEvenOdd( data ){
+        if( data % 2 === 0 ){
+            console.log('even');
+        }else{
+            console.log( 'odd' );
+        }
+    }
+
+
+</script>
+
+
+<script>
+    /* 
+        从1循环遍历到这个数位置，打印其中能被3整除的数字
+    */
+
+    function printNum ( num ){
+
+        //遍历1-num之间所有数字
+        for(let i=1; i<=num; i++){
+            if( i % 3 === 0){
+                console.log( i );
+            }
+        }
+    }
+
+    
+
+</script>
+
+
+
+
+<script>
+
+    function isType( data ){
+
+        //检测值的类型: typeof
+        let type = typeof data;
+
+        //判断
+        switch(type){
+            case 'number': 
+                console.log( '数字' );
+                break;
+
+            case 'string': 
+                console.log( '字符串' );
+                break;
+
+            case 'boolean': 
+                console.log( '布尔' );
+                break;
+
+            case 'undefined': 
+                console.log( '未定义' );
+                break;
+
+            case 'object': 
+                console.log( '空类型' );
+                break;
+        }
+    }
+
+    
+
+
+</script>
+
+
+
+

@@ -1,0 +1,84 @@
+1. DOM节点操作
+    1) 特殊节点
+        html节点    document.documentElement
+        body节点    document.body
+
+    2) 查找节点【重点】
+        .parentNode     找父节点
+        .children       找子元素，返回一个伪数组
+        .previousElementSibling 找上一个兄弟
+        .nextElementSibling     找下一个兄弟
+
+    3) 新增节点【重点】
+        //创建节点
+        let h1=document.createElement('h1');
+
+        //添加到DOM树
+        node.appendChild(h1);
+
+    4) 删除节点【重点】
+        node.remove();
+
+    5) 属性操作
+        a. 原生属性【重点】
+            html标签自带的属性，W3C规定的标准属性
+            <a href=""></a>
+            获取： node.属性名;
+            设置： node.属性名=值;
+
+        b. 自定义属性
+            在html标签上可以自己设置属性，只要符合格式要求即可
+            <a myname=""></a>
+            获取： node.getAttribute('属性名');
+            设置： node.setAttribute('属性名', '值');
+
+2. 事件
+    1) 什么是事件？
+        事件是指用户与计算机交互的行为
+
+    2) 事件的四要素
+        事件源：发生事件的源头，事件发生在哪个标签上
+        事件类型：发生了什么样的事件
+        事件处理函数：发生事件后要执行的函数
+        事件对象：事件发生时，系统自动创建的对象，包含了各种信息
+
+    3) 注册事件的三种方式
+        a. 在标签上注册事件
+            <h1 onclick="fn()"></h1>
+
+        b. DOM对象注册事件【重点】
+            h1.onclick=function(){
+                ...
+            }
+
+        c. W3C标准方法注册事件【重点】
+            h1.addEventListener('click', function(){
+                ...
+            });
+
+    4) 常用事件
+        a. 鼠标类
+            click       点击事件
+            mouseover   移入事件
+            mouseout    移出事件
+
+        b. 键盘类
+            keydown     键盘按下事件
+
+        c. 表单类
+            submit      提交事件，form才有提交事件
+            input       输入事件
+            blur        失去焦点事件
+            change      改变事件，一般用于select下拉框
+
+        d. 窗口类
+            load        窗口加载事件
+            scroll      滚动条滚动事件
+
+    5) 事件机制
+        冒泡：事件在最里层的标签上触发，再一层一层向上触发，直到最顶层
+        捕捉：事件在最顶层的标签上触发，再一层一层向下触发，直到最里层
+
+    6) 事件处理函数的返回值
+        事件处理函数可以有返回值，return false; 用于阻止浏览器的默认行为
+        主要针对 <a> 和 <form>，用于阻止跳转行为

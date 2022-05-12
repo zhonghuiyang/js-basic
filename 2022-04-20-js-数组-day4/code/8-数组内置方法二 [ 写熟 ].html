@@ -1,0 +1,46 @@
+<script>
+
+    /* 
+        arr.pop()    : 删除数组最后一个元素
+        arr.shift()  : 删除数组第一个元素
+    */
+    arr = ['number', 'string', 'boolean' ,'undefined' , 'null', 'symbol']
+    arr.pop(); //['number', 'string', 'boolean' ,'undefined' , 'null']
+    arr.pop(); //['number', 'string', 'boolean' ,'undefined' ]
+
+    arr.shift();//['string', 'boolean' ,'undefined' ]
+    console.log( arr );
+
+
+</script>
+
+
+<script>
+
+    /* 
+        arr.push()   : 数组末尾添加元素
+        arr.unshift(): 数组之前添加元素
+    */
+    arr = [1,2,3,4]
+    arr.push('a', 'b');//[1, 2, 3, 4, 'a', 'b']
+    arr.unshift('刘备', '曹操')//['刘备', '曹操', 1, 2, 3, 4, 'a', 'b']
+
+    console.log( arr );
+
+</script>
+
+
+
+<script>
+
+    /* 
+        arr.splice() : 删除 添加 替换元素
+    */
+    arr = ['a', 'b', 'c', 'd', 'e', 'f']
+    //arr.splice(1,3) //从索引为1开始删除3个元素//['a', 'e', 'f']
+    //arr.splice(1,0,'刘备', '曹操') //从索引为1开始删除0个,并添加刘备 曹操 //['a', '刘备', '曹操', 'b', 'c', 'd', 'e', 'f']
+    arr.splice(1,3,'李白', '杜老虎') //从索引为1开始删除3个,并添加李白和杜老虎['a', '李白', '杜老虎', 'e', 'f']
+
+    console.log( arr );
+
+</script>

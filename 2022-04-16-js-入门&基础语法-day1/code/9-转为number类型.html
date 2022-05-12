@@ -1,0 +1,66 @@
+<script>
+
+    /*
+        parseInt() : 转为整数
+        字符串:  数字开头字符串才能得到具体值, 否则NaN
+        其他类型: 得到NaN
+           
+    */
+    console.log( parseInt('250sb') );   // 250
+    console.log( parseInt('250.34sb') );   // 250
+    console.log( parseInt('sb250') );   // NaN
+
+    console.log( parseInt( true ) );   // NaN
+    console.log( parseInt( false ) );   // NaN
+    console.log( parseInt( undefined ) );   // NaN
+    console.log( parseInt( null ) );   // NaN
+
+</script>
+
+
+<script>
+
+    /*
+        parseFloat() : 转为数字,保留小数
+        字符串:  数字开头字符串才能得到具体值, 否则NaN
+        其他类型: 得到NaN
+    */
+
+    console.log( parseFloat('250sb') );      // 250
+    console.log( parseFloat('250.06sb') );      // 250.06
+    console.log( parseFloat('250.34sb') );   // 250.34
+    console.log( parseFloat('sb250') );      // NaN
+    console.log( parseFloat( true ) );   // NaN
+    console.log( parseFloat( false ) );   // NaN
+    console.log( parseFloat( undefined ) );   // NaN
+    console.log( parseFloat( null ) );   // NaN
+
+</script>
+
+
+
+<script>
+
+    /*
+        Number() : 转为数字
+        字符串: 只有纯数字字符串得到具体值, 否则: NaN
+        其他类型: 
+            true: 1             false: 0
+            undefined: NaN      null: 0
+    */
+
+    console.log( Number( '90' ) ); //90
+    console.log( Number( '90.34' ) ); //90.34
+    console.log( Number( '' ) ); //0
+
+    console.log( Number( '130sb' ) ); //NaN
+    console.log( Number( 'sb450' ) ); //0
+
+    console.log( Number( true ) ); //1
+    console.log( Number( false ) ); //0
+    console.log( Number( undefined ) ); //NaN
+    console.log( Number( null ) ); //0
+
+
+
+</script>

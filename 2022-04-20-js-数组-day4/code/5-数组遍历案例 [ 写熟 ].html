@@ -1,0 +1,22 @@
+<script>
+
+    /* 
+        练习二
+            编写函数: 返回一个数组中的最大值
+    */
+
+    function getMax ( arr ){
+
+        let max = arr[0];  //保存最大值 === 技巧: 初始值=数组的第一个值
+        arr.forEach(function (v){
+            if( v > max ) {   //如果max小于数组元素,将该元素赋值给max
+                max = v ;
+            };
+        })
+        return max;
+    }
+
+
+    console.log( getMax( [-12,-42,-90,-30,-69,-47] ) ); 
+
+</script>

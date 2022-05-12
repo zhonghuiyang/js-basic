@@ -1,0 +1,45 @@
+<script>
+
+    //函数外部变量
+    let a = 100;
+    console.log('函数外部a:', a );
+
+    function foo(){
+
+        console.log( '函数内部a:', a );
+
+        //局部变量
+        let b = 200;
+        console.log( '函数内部b:', b );
+    }
+
+    foo();
+    console.log( '函数外部b:', b );
+
+
+
+</script>
+
+
+
+<script>
+
+    function getNum1(a, b){
+        let sum = a + b;
+        return sum ;
+    }
+
+    let sum = getNum1(3, 5)
+
+
+
+
+
+
+
+    function getNum2(a, b){
+
+    }
+
+
+</script>

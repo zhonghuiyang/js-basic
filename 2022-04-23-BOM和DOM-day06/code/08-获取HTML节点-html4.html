@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title1">今天星期六</h1>
+    <h1 class="title">明天星期天</h1>
+    <h1 class="title">后天星期一</h1>
+    <p>爱好：
+        <input type="checkbox" name="like">吃饭
+        <input type="checkbox" name="like">睡觉
+        <input type="checkbox" name="like">打豆豆
+        <input type="checkbox" name="like">数钱
+    </p>
+
+    <script>
+        //1. 通过ID获取元素
+        let a=document.getElementById('title1');
+        console.dir( a );
+
+        //2. 通过标签名获取元素
+        let h1=document.getElementsByTagName('h1');
+        console.log( h1 );
+
+        //3. 通过name获取元素
+        let like=document.getElementsByName('like');
+        console.log( like );
+
+        //4. 通过类名获取元素
+        let title=document.getElementsByClassName('title');
+        console.log( title );
+    </script>
+</body>
+</html>

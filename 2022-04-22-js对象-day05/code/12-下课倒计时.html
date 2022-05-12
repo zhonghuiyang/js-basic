@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>下课倒计时：<span id="minutes">00</span>分 <span id="seconds">00</span>秒</h1>
+    <script>
+        setInterval(function(){
+            //下课倒计时
+            let d1=new Date();
+            let d2=new Date('2022-04-22 17:00:00');
+    
+            //倒计时的总秒数
+            let sec=Math.floor(d2.getTime()/1000) - Math.floor(d1.getTime()/1000);
+            console.log( sec );
+    
+            //计算剩余的分钟数
+            let m=Math.floor( sec/60 );
+            minutes.innerText=m;
+    
+            //计算剩余的秒数
+            let s=sec%60;
+            seconds.innerText=s;
+        }, 1000);
+    </script>
+</body>
+</html>

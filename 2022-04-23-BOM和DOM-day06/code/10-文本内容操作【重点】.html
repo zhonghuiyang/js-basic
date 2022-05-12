@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>今天星期六</h1>
+
+    <script>
+        let h1=document.querySelector('h1');
+        h1.onclick=function(){
+            //1. innerText 操作标签对中的普通文本
+            //console.log( h1.innerText ); //获取标签对中的普通文本
+            //h1.innerText='明天星期天，我们不上课，好海哦~~~';
+
+            //2. innerHTML 操作标签对中的HTML内容
+            //console.log( h1.innerHTML ); //获取标签对中的HTML内容
+            //h1.innerHTML='明天星期天，<big>我们不上课</big>，好海哦~~~';
+
+            //3. textContent 操作文本节点或元素节点的普通文本
+            //console.log( h1.textContent );
+            h1.textContent='明天星期天，我们不上课，好海哦~~~';
+        }
+    </script>
+</body>
+</html>

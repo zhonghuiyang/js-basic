@@ -1,0 +1,27 @@
+<script>
+
+    /*
+        需求: 判断输入的数字
+        如果能够被3整除,输出 '三'           num%3===0
+        如果能够被5整除,输出 '五'           num%5===0
+        如果能够被3和5同时整除,输出 '三五'   num%3===0 && num%5===0
+        否则输出该值
+    */
+
+    //得到输入的数字
+    let num = prompt('输入数字');
+
+    if(num%3===0 && num%5===0){
+        console.log( '三五' );
+
+    }else if(num%3===0){
+        console.log( '三' );
+        
+    }else if(num%5===0){
+        console.log( '五' );
+
+    }else{
+        console.log( num );
+    }
+
+</script>

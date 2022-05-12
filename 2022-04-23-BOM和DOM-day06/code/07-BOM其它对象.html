@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn">点我</button>
+    <script>
+        //1. screen屏幕对象
+        console.log( window.screen );
+
+        //2. history历史记录对象
+        console.log( history );
+
+        //3. location地址栏对象
+        console.log( location );
+        console.log( location.hash ); //#hash值
+        console.log( location.href );
+
+        btn.onclick=function(){
+            //给location.href赋值就是跳转
+            location.href="https://www.baidu.com";
+        }
+
+        //4. 浏览器对象
+        console.log( navigator );
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={};
+        console.log( obj );
+
+        //1. 新增属性，给一个不存在的属性赋值就是新增
+        obj.name='小黑';
+        console.log( obj );
+
+        //2. 修改属性，给已有的属性赋值就是修改
+        obj.name='小白';
+        console.log( obj );
+
+        //3. 访问属性
+        console.log( obj.name );
+        console.log( obj['name'] ); //动态属性，所有能够用 . 的地方都可以用[]代替
+        
+        //4. 删除属性
+        delete obj.name;
+        console.log( obj );
+
+
+
+        //补充：1.1 添加方法
+        obj.run=function(){
+            console.log('小白以每小时20公里速度跑步');
+        }
+        console.log( obj );
+
+        //补充：3.1 访问方法
+        obj.run();
+    </script>
+</body>
+</html>

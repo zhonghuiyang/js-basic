@@ -1,0 +1,40 @@
+<script>
+
+    /*
+        需求: 判断考试成绩
+        90以上: 优
+        80-90 : 良
+        60-80 : 中
+        60以下: 差
+
+        走代码执行流程
+    */
+
+    //输入考试成绩
+    let mark = prompt('输入成绩')
+
+    switch(true){
+        case(mark >= 90):{
+            console.log( '优' );
+            break;
+        }
+        
+        case(mark >= 80):{
+            console.log( '良' );
+            break;
+        } 
+
+        case(mark >= 60):{
+            console.log( '中' );
+            break;
+        } 
+
+        default:{
+            console.log( '差' );
+            break;
+        }
+    }
+
+
+
+</script>

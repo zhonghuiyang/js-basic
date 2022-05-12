@@ -1,0 +1,33 @@
+<script>
+
+    /* 
+        需求: 给数组每个元素加5
+    */
+    let arr = [2,14,6,8]
+    // arr[0] = arr[0] + 5
+    // arr[1] = arr[1] + 5
+    // arr[2] = arr[2] + 5
+    // arr[3] = arr[3] + 5
+
+
+    for(let i=0; i<arr.length; i++){
+        arr[i] = arr[i] + 5
+    }
+    console.log( arr );
+    
+
+</script>
+
+
+
+<script>
+
+    arr = [2,14,6,8]
+    arr.forEach(function (v, i){
+        arr[i] = v + 5;
+    })
+
+    console.log( arr );
+
+
+</script>

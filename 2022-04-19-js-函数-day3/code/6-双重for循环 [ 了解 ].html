@@ -1,0 +1,48 @@
+<script>
+
+    /* 
+        需求: 打印
+            ★★★★★
+            ★★★★★
+            ★★★★★
+    */
+
+    //传统做法
+    // document.write( '★' );
+    // document.write( '★' );
+    // document.write( '★' );
+    // document.write( '★' );
+    // document.write( '★' );
+
+
+    debugger;
+    //for循环优化代码
+    for (let i = 1; i <= 3; i++) {
+
+
+        for (let j = 1; j <= 5; j++) {
+
+            document.write('★');
+
+        }
+
+
+        document.write('<br>')
+    }
+
+    /* 
+        执行过程: 
+
+            i=1     j=1 j=2 j=3 j=4 j=5
+
+            i=2     j=1 j=2 j=3 j=4 j=5
+
+            i=3     j=1 j=2 j=3 j=4 j=5
+
+    */
+
+
+
+
+
+</script>

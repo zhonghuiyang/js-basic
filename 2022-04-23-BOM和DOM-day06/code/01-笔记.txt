@@ -1,0 +1,73 @@
+1. JavaScript组成
+    JavaScript由三部分组成：
+        ECMAScript核心语法：在内存中运算的语法格式，如：变量、运算符、if、for、数组...
+        DOM文档对象模型：让JS可以操作网页，实现交互效果
+        BOM浏览器对象模型：让JS可以操作浏览器，实现交互效果
+
+2. BOM介绍
+    BOM是浏览器对象模型，将浏览器看成是一个对象，让JS可以操作浏览器
+    window是BOM的直接体现，要操作浏览器就要找window对象
+
+3. window对象
+    1) 什么是window对象？
+        window对象BOM的直接体现，是全局对象，可以在任意地方使用，前缀可以省略不写
+        var定义的全局变量和函数，会成为window的属性和方法
+
+    2) window的方法【重点】
+        .setInterval()      设置周期定时器，可以执行多次
+        .clearInterval()    取消周期定时器，必须加定时器标识
+        .scrollTo()         设置滚动条跳转到指定的位置scrollTo(x, y);
+
+        .setTimeout()       设置超时定时器，只能执行1次
+        .clearTimeout()     清除超时定时器
+
+4. BOM其它对象
+    1) screen屏幕对象
+
+    2) history历史记录对象
+
+    3) location地址栏对象
+        location.hash   设置或获取当前网页的锚点
+        location.href   设置或获取当前网页的URL地址
+
+    4) navigator浏览器对象
+
+5. DOM介绍
+    1) 什么是DOM？
+        DOM就是文档对象模型，将整个网页看成是一个对象，操作对象可以实现交互
+        document是DOM的直接体现，要操作网页就要找document对象
+
+    2) HTML节点树（DOM树）
+        在JS中，认为所有的HTML内容都是节点对象：
+            整个网页文档是一个文档节点 document
+            每一个标签都是一个元素节点 element
+            每一个标签中的文本都是一个文本节点 text
+            每一个标签中的属性都是一个属性节点 attribute
+
+6. DOM基本操作
+    1) 获取HTML节点
+        //html4
+        document.getElementById(); //通过ID查找页面元素
+        document.getElementsByTagName(); //通过标签名获取元素，返回一个伪数组
+        document.getElementsByName(); //通过name获取元素
+        document.getElementsByClassName(); //通过类名获取元素
+
+        //html5【重点】
+        document.querySelector('选择器'); //获取匹配到的第1个元素
+        document.querySelectorAll('选择器'); //获取匹配到的所有元素
+
+    2) 值操作【重点】
+        a. 文本内容操作
+            .innerText   操作标签对中的普通文本
+            .innerHTML   操作标签对中的HTML内容
+            .textContent 操作文本节点或元素节点中的普通文本
+
+        b. 表单元素值
+            .value      操作表单元素的值，input  select  textarea
+
+    3) 样式操作【重点】
+        a. style行内样式
+            node.style.样式属性名='样式属性值';
+
+        b. className类名操作
+            node.className='类名';

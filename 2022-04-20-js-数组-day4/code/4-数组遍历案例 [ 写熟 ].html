@@ -1,0 +1,35 @@
+<script>
+    /* 
+        练习一	
+            数组为：[16,3,5,7,24,32,25,48]
+            1.求数组奇数的个数和偶数的个数
+            2.求出上面数组的平均值
+    */
+
+    //定义数组
+    let arr = [16,3,5,7,24,32,25,48];
+
+    //定义变量
+    let even = 0; //偶数个数
+    let odd = 0;  //奇数个数
+    let sum = 0;  //总和
+
+    //遍历
+    arr.forEach(function (v){
+        
+        //筛选奇数和偶数
+        v%2 === 0 ? even++ : odd++ ;
+
+        //总和
+        sum += v;
+        
+    })
+
+    console.log( '偶数个数:', even );
+    console.log( '奇数个数:', odd );
+    console.log( '总和:', sum );
+    console.log( '平均值:', sum/arr.length );
+
+
+
+</script>

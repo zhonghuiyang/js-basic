@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert('111');
+        //window.alert('2222'); //前缀可以省略不写
+
+        var a=10;
+        console.log( a );
+        console.log( window.a ); //var定义的全局变量是window的属性
+
+        function add(){
+            console.log('加法函数')
+        }
+        console.log( window.add() ); //全局函数会成为window的方法
+    </script>
+</body>
+</html>
